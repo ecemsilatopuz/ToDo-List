@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body style="background-color: #fdfcf9;">
+    <nav id="navbar" style="background-color: #efebe7;">
+        <center><h1>WEEKLY TO DO LIST</h1></center> <br>
+        <center><h4>Today is 
+            <script>
+            var tarih = new Date();
+            document.write(tarih.toDateString());
+            </script> </h4>
+    </nav>
+
+    <section id="section">
+            <div class="days">
+                <ul class="item">
+                    <li> <center><h4>MONDAY</h4>
+                        <div id="newtask">
+                            <input type="text" placeholder="Add a new task">
+                            <button id="push">Add</button>
+                        </div> 
+                        <div id="tasks"></div>
+                    <script>
+        document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#newtask input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks').innerHTML += `
+            <div class="task">
+                <span id="taskname">
+                    ${document.querySelector('#newtask input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+                <ul class="item">
+                    <li> <center><h4>TUESDAY</h4>
+                        <div id="newtask2">
+                            <input type="text" placeholder="Add a new task">
+                            <button id="push2">Add</button>
+                        </div> 
+                        <div id="tasks2"></div>
+                    <script>
+        document.querySelector('#push2').onclick = function(){
+    if(document.querySelector('#newtask2 input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks2').innerHTML += `
+            <div class="task2">
+                <span id="taskname2">
+                    ${document.querySelector('#newtask2 input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+                <ul class="item">
+                    <li> <center><h4>WEDNESDAY</h4>
+                        <div id="newtask3">
+                            <input type="text" placeholder="Add a new task">
+                            <button id="push3">Add</button>
+                        </div> 
+                        <div id="tasks3"></div>
+                    <script>
+        document.querySelector('#push3').onclick = function(){
+    if(document.querySelector('#newtask3 input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks3').innerHTML += `
+            <div class="task3">
+                <span id="taskname3">
+                    ${document.querySelector('#newtask3 input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+                <ul class="item">
+                    <li> <center><h4>THURSDAY</h4>
+                        <div id="newtask4">
+                            <input type="text" placeholder="Add a new task">
+                            <button id="push4">Add</button>
+                        </div> 
+                        <div id="tasks4"></div>
+                    <script>
+        document.querySelector('#push4').onclick = function(){
+    if(document.querySelector('#newtask4 input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks4').innerHTML += `
+            <div class="task4">
+                <span id="taskname4">
+                    ${document.querySelector('#newtask4 input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+                <ul class="item">
+                    <li> <center><h4>FRIDAY</h4>
+                        <div id="newtask5">
+                            <input type="text" placeholder="Add a new task">
+                            <button id="push5">Add</button>
+                        </div> 
+                        <div id="tasks5"></div>
+                    <script>
+        document.querySelector('#push5').onclick = function(){
+    if(document.querySelector('#newtask5 input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks5').innerHTML += `
+            <div class="task5">
+                <span id="taskname5">
+                    ${document.querySelector('#newtask5 input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+                <ul class="item">
+                    <li> <center><h4>SATURDAY</h4>
+                        <div id="newtask6">
+                            <input type="text" placeholder="Add a new task">
+                            <button id="push6">Add</button>
+                        </div> 
+                        <div id="tasks6"></div>
+                    <script>
+        document.querySelector('#push6').onclick = function(){
+    if(document.querySelector('#newtask6 input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks6').innerHTML += `
+            <div class="task6">
+                <span id="taskname6">
+                    ${document.querySelector('#newtask6 input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+                <ul class="item">
+                    <li> <center><h4>SUNDAY</h4>
+                        <div id="newtask7">
+                            <input type="text" placeholder="Add a new task">
+                            <button id="push7">Add</button>
+                        </div> 
+                        <div id="tasks7"></div>
+                    <script>
+        document.querySelector('#push7').onclick = function(){
+    if(document.querySelector('#newtask7 input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks7').innerHTML += `
+            <div class="task7">
+                <span id="taskname7">
+                    ${document.querySelector('#newtask7 input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+                <ul class="item">
+                    <li> <center><h4>NOTES</h4>
+                        <div id="newtask8">
+                            <input type="text" placeholder="Add a new notes">
+                            <button id="push8">Add</button>
+                        </div> 
+                        <div id="tasks8"></div>
+                    <script>
+        document.querySelector('#push8').onclick = function(){
+    if(document.querySelector('#newtask8 input').value.length == 0){
+        alert("Please Enter a Note")
+    }
+    else{
+        document.querySelector('#tasks8').innerHTML += `
+            <div class="task8">
+                <span id="taskname8">
+                    ${document.querySelector('#newtask8 input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+ }
+}
+          </script></center></li> </ul>
+               
+              </div> 
+    </section>
+</body>
+</html>
